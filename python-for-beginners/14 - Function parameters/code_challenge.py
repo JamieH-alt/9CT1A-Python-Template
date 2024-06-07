@@ -14,3 +14,13 @@
 # 
 # BONUS: Test your function with the values 6, 4 and divide 
 # Have your function return an error message when invalid values are received
+firstNum = float(input("First Number: "))
+secondNum = float(input("Second Number: "))
+operation = input("Operation: ")
+def calc(num1, num2, operation):
+    if operation == "add":
+        return firstNum + secondNum
+    elif operation == "subtract":
+        return firstNum - secondNum
+    
+print(calc(firstNum, secondNum, operation))
